@@ -21,7 +21,7 @@
 #include <string>
 
 namespace CryptoNote {
-  const char CRYPTONOTE_NAME[] = "ThunderHub";
+  const char CRYPTONOTE_NAME[] = "EcoNote";
   const uint64_t MONEY_SUPPLY = UINT64_C(50000000000000000000); // 50 miliardi di THUB
   const unsigned EMISSION_SPEED_FACTOR = 20;
   const uint64_t GENESIS_BLOCK_REWARD = UINT64_C(5000000000); // 50 THUB preminati
