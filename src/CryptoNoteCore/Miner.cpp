@@ -70,7 +70,7 @@ void Miner::on_block_chain_update() {
 
   if (m_miner_address) {
     m_miner_address->thunderScore += 10; // +10 per ogni blocco minato
-    std::cout << "Thunder Score updated: " << m_miner_address->thunderScore << std::endl;
+    std::cout << "EcoNote Score updated: " << m_miner_address->thunderScore << std::endl;
   }
 
   BlockTemplate block_template;
