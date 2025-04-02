@@ -127,4 +127,15 @@ void Miner::worker(uint32_t th_local_index) {
     }
 
     if (check_hash(hash, difficulty)) {
-      m_logger(Logging::INFO) << "Found block with hash "
+      m_logger(Logging::INFO) << "Found block with hash " << hash << " at difficulty " << difficulty;
+      m_blockchain.add_new_block(block_template);
+      on_block_chain_update();
+    }
+
+    nonce += m_threads_total;
+  }
+
+  m_logger(Logging::INFO) << "Miner thread " << th_local_index << " stopped";
+}
+
+} // namespace CryptoNote
